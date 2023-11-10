@@ -1,0 +1,1 @@
+export const TRANSITION: string = "transition-all ease-in-out duration-500"

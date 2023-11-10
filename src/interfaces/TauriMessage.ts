@@ -1,0 +1,3 @@
+interface TauriMessage {
+    message: string
+}

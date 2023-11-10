@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "Tauri is Awesome!",
+    "productName": "Fractal Wallet",
     "version": "0.0.0"
   },
   "tauri": {
@@ -21,7 +21,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "com.fractal.robertnetzke",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -37,9 +37,11 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "Tauri is Awesome!",
+        "title": "Fractal",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "minWidth": 800,
+        "minHeight": 600
       }
     ]
   }
