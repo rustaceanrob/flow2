@@ -1,7 +1,8 @@
 import { CgSpinnerTwoAlt } from 'react-icons/cg'
-import Fades from '../util/Fades'
+import Fades from '../../util/Fades'
 import { useEffect, useState } from 'react'
 import { listen } from '@tauri-apps/api/event'
+import TauriMessage from '../../../interfaces/TauriMessage'
 
 const AppOpen = () => {
   const [tauriMessage, setTauriMessage] = useState<string>('')
@@ -12,7 +13,7 @@ const AppOpen = () => {
             setTauriMessage((event.payload as TauriMessage).message)
         }) 
     })()
-}, [])
+  }, [])
 
   return (
     <Fades style='flex flex-row justify-center items-center w-full h-screen' delay={50}>

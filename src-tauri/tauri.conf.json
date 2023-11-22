@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "Fractal Wallet",
+    "productName": "Flow Wallet",
     "version": "0.0.0"
   },
   "tauri": {
@@ -16,6 +16,19 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "clipboard": {
+        "all": false,
+        "readText": true,
+        "writeText": true
+      },
+      "dialog": {
+        "all": false,
+        "ask": false,
+        "confirm": false,
+        "message": true,
+        "open": true,
+        "save": false
       }
     },
     "bundle": {
@@ -37,11 +50,11 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "Fractal",
-        "width": 800,
-        "height": 600,
+        "title": "Flow Bitcoin Wallet",
+        "width": 1000,
+        "height": 800,
         "minWidth": 800,
-        "minHeight": 600
+        "minHeight": 700
       }
     ]
   }

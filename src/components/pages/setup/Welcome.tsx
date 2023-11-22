@@ -1,5 +1,5 @@
 import { FaHandSpock } from 'react-icons/fa'
-import Fades from '../util/Fades'
+import Fades from '../../util/Fades'
 import { useNavigate } from 'react-router-dom'
 
 const Welcome = () => {

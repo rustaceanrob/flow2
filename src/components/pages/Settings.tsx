@@ -9,18 +9,17 @@ const Settings = () => {
     const navigate = useNavigate()
     const [nested, setNested] = useState<boolean>(false)
 
-
     return (
         <AppSkeleton centerChildren={false}>
-            <Fades style='p-2' delay={100}>
-                <button onClick={() => navigate("/home")}>
-                    <FaArrowLeft className="text-green-600"/>
+            <Fades style='' delay={100}>
+                <button onClick={() => navigate("/home")} className='pl-1'>
+                    <FaArrowLeft className="text-green-600" size={12}/>
                 </button>
-                <div className='flex flex-col justify-start items-start space-y-5 pt-5'>
+                <div className='flex flex-col justify-start items-start space-y-5 pl-40 pr-40 pt-20 lg:pl-[200px] lg:pr-[200px] xl:pl-[350px] xl:pr-[350px]'>
                     <div className='flex flex-col justify-center items-center'>
                         <div className='flex flex-row justify-center items-center space-x-1'>
                             <BsWallet2 className="text-green-600"/>
-                            <h1 className='text-xl font-extrabold dark:text-white'>
+                            <h1 className='text-xl font-bold dark:text-white'>
                                 Wallet
                             </h1>
                         </div>
@@ -37,11 +36,11 @@ const Settings = () => {
                         </label>
                     </div>
                 </div>
-                <div className='flex flex-col justify-start items-start space-y-5 pt-5'>
+                <div className='flex flex-col justify-start items-start space-y-5 pl-40 pr-40 pt-20 lg:pl-[200px] lg:pr-[200px] xl:pl-[350px] xl:pr-[350px]'>
                     <div className='flex flex-col justify-center items-center'>
                         <div className='flex flex-row justify-center items-center space-x-1'>
                             <FaBitcoin className="text-green-600"/>
-                            <h1 className='text-xl font-extrabold dark:text-white'>
+                            <h1 className='text-xl font-bold dark:text-white'>
                                 Server
                             </h1>
                         </div>

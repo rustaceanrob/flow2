@@ -1,3 +1,3 @@
-interface TauriMessage {
+export default interface TauriMessage {
     message: string
 }

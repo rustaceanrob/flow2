@@ -2,7 +2,7 @@ import React from 'react'
 
 type Props = {}
 
-const WalletView = (props: Props) => {
+const MakeSingle = (props: Props) => {
   return (
     <div>
         
@@ -10,4 +10,4 @@ const WalletView = (props: Props) => {
   )
 }
 
-export default WalletView
+export default MakeSingle
